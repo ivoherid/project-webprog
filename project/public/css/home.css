@@ -1,0 +1,303 @@
+body {
+    background-color: #102526;
+    color: white;
+    margin: 1em 2em;
+}
+
+.container {
+    margin: 1.5em 0em;
+}
+
+.hello-text {
+    color: #707070;
+}
+
+.btn-payment {
+    background-color: #896E38;
+    color: white;
+    padding: 0.5em 3em;
+    border-radius: 0.75em;
+    font-size: 1.1em;
+}
+
+.wallet-container {
+    margin: 2em 0em;
+}
+
+.wallet-title {
+    font-size: 2em;
+}
+
+.wallet-content {
+    display: flex;
+    flex-direction: row;
+    gap: 6em;
+    margin: 1.2em 0em;
+    padding: 0.5em;
+    border-color: white;
+    border-width: 1px;
+    background-color: #102526;
+    width: 20%;
+    padding: 0.8em 2em;
+    align-items: center;
+}
+
+.payment-image {
+    margin: 0.5em 0em;
+    width: 2em;
+    height: auto;
+}
+
+.top-service {
+    margin: 2.5em 0em;
+}
+
+.top-service-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5em;
+    margin: 1em 0em;
+}
+
+.top-service-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.watch-video {
+    font-size: 1.15em;
+}
+
+.barber-image{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+.barbercontent {
+    background-color: #102526;
+    margin: 1em 1em;
+    align-items: center;
+    border-color: white;
+    border-width: 1.5px;
+    border-radius: 10px;
+    padding: 1em 0em;
+    width: 8rem;
+}
+
+.barber-description {
+    padding: 1px;
+    text-align: center;
+}
+
+.barber-profile {
+    background-color: #102526;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.promo-div {
+    margin: 2em 0em;
+}
+
+.promo-image {
+    width: 25em;
+    height: 15em;
+    margin: 0.5em 0em;
+}
+
+.referral-div {
+    margin: 2em 0em;
+}
+
+.articles-div {
+    margin: 2.5em 0em;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+    color: white;
+    background-color: #102526;
+    border-color: white;
+    border-width: 1.5px;
+    border-radius: 10px;
+    margin: 1.5em 0em;
+    padding: 0.5em;
+    width: 85%;
+}
+
+.card-container {
+    flex-grow: 1;
+    margin: 0.5em 1.25em;
+}
+
+.card-text {
+    color: #707070;
+}
+
+.card-img-top {
+    width: 25em;
+    height: 15em;
+    border-radius: 5px;
+}
+
+.card-content {
+    padding: 10px !important;
+}
+
+
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (orientation: portrait) {
+    .welcome-text {
+        font-size: 1.5em;
+    }
+
+    .btn-payment {
+        padding: 0.5em 2em;
+        border-radius: 10px;
+        font-size: 1em;
+    }
+
+    .wallet-tittle {
+        font-size: 0.5em;
+    }
+
+    .wallet-content {
+        border-width: 0.5px;
+        width: 100%;
+        padding: 0.7em 0.8em;
+    }
+
+    .payment-image {
+        width: 3em;
+        height: 1em;
+    }
+
+    .balance {
+        font-size: 1.2em;
+        margin: 0em 3em;
+    }
+
+    .barber-title {
+        font-size: 1.5em;
+        margin-bottom: -0.25em;
+    }
+
+    .barber-content {
+        border-radius: 5px;
+        width: 20em;
+    }
+
+    .barber-image {
+        width: 3em;
+        height: 3em;
+    }
+
+    .barber-text {
+        font-size: 1em;
+    }
+
+    .service-title {
+        font-size: 1.5em;
+    }
+
+    .top-service {
+        margin: 0.75em 0em;
+    }
+
+    .top-service-text {
+        font-size: 1em;
+    }
+
+    .top-service-container {
+        gap: 3.5em;
+    }
+
+    .top-service-content {
+        gap: 1em;
+    }
+
+    .watch-video {
+        font-size: 0.9em;
+    }
+
+    .promo-div {
+        margin: 1.5em 0em;
+    }
+
+    .promo-title {
+        font-size: 1.5em;
+    }
+
+    .promo-image {
+        width: 17em;
+        height: 10em;
+        margin: 0.5em 0em;
+    }
+
+    .referral-div {
+        margin: 1.5em 0em;
+    }
+
+    .referral-title {
+        font-size: 1.5em;
+    }
+
+    .articles-div {
+        margin: 1.5em 0em;
+    }
+
+    .article-title {
+        font-size: 1.5em;
+    }
+
+    .card-text {
+        font-size: 0.6em;
+        margin-bottom: 0.1em;
+    }
+
+    .card-title {
+        font-size: 0.8em;
+        margin-bottom: 0.3em;
+    }
+
+    .card-content {
+        width: 100%;
+        padding: 0.1em;
+    }
+
+    .card-container {
+        flex-grow: 1;
+        margin: 0.1em 0.5em;
+    }
+
+    .card-img-top {
+        width: 64px;
+        height: 64px;
+        border-radius: 5px;
+    }
+
+    .card-content {
+        padding: 10px !important;
+    }
+
+    .barber-profile {
+        background-color: #102526;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cc {
+        margin: 10px 10px;
+    }
+
+    .card {
+        width: 187px;
+    }
+}

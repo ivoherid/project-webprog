@@ -1,0 +1,36 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(174, 174, 174);
+    padding: 8px 16px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-name {
+    color: #707070;
+}
+
+.navbar-content {
+    margin-bottom: -0.5em;
+}
+
+@media only screen and (device-width: 360px) and (device-height: 640px) and (orientation: portrait) {
+    .icon-name {
+        font-size: 15px;
+    }
+
+    img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .navbar-content {
+        margin-bottom: -0.8em;
+    }
+}
