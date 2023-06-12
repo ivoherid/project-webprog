@@ -12,7 +12,7 @@ use App\Models\User;
 class HomeController extends Controller
 {
     public function index(){
-        $barber = Barber::all();
+        $barber=Barber::orderBy('rating','desc')->take(2)->get();
         return view('home',[
             "barber" => $barber,
             "articles"=>Article::all(),

@@ -292,12 +292,4 @@ body {
         display: flex;
         flex-wrap: wrap;
     }
-
-    .cc {
-        margin: 10px 10px;
-    }
-
-    .card {
-        width: 187px;
-    }
 }

@@ -76,7 +76,7 @@
             <div class="text1" style="color: #d8d8d6;">
                 <h3>{{ $items->name }}</h3>
                 <p>{{ $items->rating }}</p>
-                <a href="{{ route('barbershop', ['id' => $items->id]) }}">click here</a>
+                <a href="{{ route('barbershop', ['id' => $items->id]) }}" style="position: absolute;right:10%; ;" class="btn btn-light" >Order Now</a>
             </div>
         </div>
     @endforeach
