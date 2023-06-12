@@ -32,11 +32,13 @@ class UserSeeder extends Seeder
             'name' => 'Barber Grogol',
             'address' => 'Jakarta Selatan',
             'rating' => 5,
+            'description' => 'Barber ini adalah barber paling murah di daerah sini, siapa brani lawan?',
             ],[
             'id' =>2,
             'name' => 'Barber Binoes',
             'address' => 'Kemanggisan',
             'rating' => 4.5,
+            'description' => 'Barber ini adalah barber paling komplit dan elit di daerah sini, siapa berani lawan?',
             ]]);
 
             DB::table('barbers')->insert([[

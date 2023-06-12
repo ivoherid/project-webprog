@@ -6,61 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('css/barbershop.css') }}">
 </head>
-<style>
-    body {
-        background-color: #102526;
-        color: #d8d8d6;
-    }
-
-    .container {
-        background-color: #102526;
-        padding: 0 0;
-    }
-
-    .profile_pic {
-        clip-path: circle();
-        width: 70px;
-        object-fit: cover;
-    }
-
-    .commend {
-        background-color: #896E38;
-        border-radius: 10px;
-        padding: 2%;
-        margin: 2%;
-        display: flex;
-        justify-content: flex-start;
-        gap: 0;
-    }
-
-    .commend2 {
-        display: flex;
-        flex-direction: row;
-        gap: 3%;
-        margin: 0;
-        width: 300px;
-    }
-
-    .btn-group {
-        text-align: center;
-        align-items: center;
-    }
-
-    .image {
-        display: block;
-        margin: 0;
-        margin-bottom: 2%;
-        width: 100%;
-        aspect-ratio: 2/1.2;
-        object-fit: cover;
-        box-shadow: 3px 3px 3px 3px rgb(33, 33, 33);
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
-    }
-</style>
 
 <body>
     <div class="container">
@@ -84,18 +33,42 @@
                 style="width: 50%; height: 50px;">Review</a>
         </div>
         <div>
-            <h2>
-                Description :
-            </h2>
-            <h6>
-                Barber Garuda adalah tempat Barber dengan tema klasik, dengan interior yang mewah
-            </h6>
+
+            <div class="desc">
+                <h3 class="desc-text">
+                    Description :
+                </h3>
+                <h6 class="desc-content">
+                    {{ $barbershop->description }}
+                </h6>
+            </div>
+
+            <div class="location">
+                <h3 class="location-text">Location :</h3>
+                <h6 class="address">{{ $barbershop->address }}</h6>
+            </div>
+
         </div>
-        @foreach ($barber as $items)
-            @if ($items->barbershop_id == $barbershop->id)
-                <h1>{{ $items->name }}</h1>
-            @endif
-        @endforeach
+
+
+        <h2 class="barber-title">Barbers</h2>
+        <div class="barber-profile">
+            @foreach ($barber as $items)
+                @if ($items->barbershop_id == $barbershop->id)
+                    <div class="card barbercontent">
+                        <div class="barber-description">
+                            <img class="barber-image" src="{{ asset('img/tony.png') }}" alt="">
+                            <h6 class="barber-text">{{ $items->name }}</h6>
+                            <p class="barber-text">Barber {{ $items->barbershop }}</p>
+                            <div class="barber-rating">
+                                <img class="ic_star" src="{{ asset('img/fullstar.png') }}" alt="">
+                                <p class="barber-text">{{ $items->rating }}</p>
+                            </div>
+                        </div>
+                    </div>
+                @endif
+            @endforeach
+        </div>
 
 
         @extends('.component/navbar')

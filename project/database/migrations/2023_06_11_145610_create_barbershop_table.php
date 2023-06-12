@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('address');
             $table->float('rating');
+            $table->string('description');
             $table->timestamps();
         });
     }

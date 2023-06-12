@@ -95,7 +95,7 @@
 
             </div>
             <div>
-                <a href="{{ route('barbershop_review', ['id' => $items->id]) }}"
+                <a href="{{ route('barbershop_desc', ['id' => $items->id]) }}"
                     style="position: absolute;right:6%; margin-top:45px;box-shadow: 2px 2px 2px 2px rgb(46, 46, 46);"
                     class="btn btn-light">Order Now</a>
             </div>
