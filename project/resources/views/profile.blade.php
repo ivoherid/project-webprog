@@ -49,17 +49,18 @@
     </div>
 
     <!-- buat for each command  -->
-    @foreach ($review as $item)
-        {{-- <img class="profile_pic" src="https://i1.sndcdn.com/artworks-5aDBMLz7U2zE8hoL-D0dFww-t500x500.jpg"
+    <div class="review-container">
+        @foreach ($review as $item)
+            {{-- <img class="profile_pic" src="https://i1.sndcdn.com/artworks-5aDBMLz7U2zE8hoL-D0dFww-t500x500.jpg"
             alt=""> --}}
-
-        @if ($item->user_id == auth()->user()->id)
-            <div class="review">
-                <h6>{{ auth()->user()->name }}</h6>
-                <h6>{{ $item->content }}</h6>
-            </div>
-        @endif
-    @endforeach
+            @if ($item->user_id == auth()->user()->id)
+                <div class="review">
+                    <h6>{{ auth()->user()->name }}</h6>
+                    <h6>{{ $item->content }}</h6>
+                </div>
+            @endif
+        @endforeach
+    </div>
     @extends('.component/navbar')
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">

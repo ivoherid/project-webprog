@@ -8,56 +8,8 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('css/barbershop.css') }}">
 </head>
-<style>
-    body {
-        background-color: #102526;
-        color: #d8d8d6;
-    }
-
-    .container {
-        background-color: #102526;
-        padding: 0;
-    }
-
-    .profile_pic {
-        clip-path: circle();
-        width: 70px;
-        object-fit: cover;
-    }
-
-    .commend {
-        background-color: #896E38;
-        border-radius: 10px;
-        padding: 2%;
-        margin: 2%;
-        margin-bottom: 4%;
-        display: flex;
-        justify-content: flex-start;
-        gap: 0;
-        box-shadow: 3px 3px 3px 3px rgb(20, 20, 20);
-    }
-
-    .commend2 {
-        display: flex;
-        flex-direction: row;
-        gap: 3%;
-        margin: 0;
-        width: 300px;
-    }
-
-    .image {
-        display: block;
-        margin: 0;
-        margin-bottom: 2%;
-        width: 100%;
-        aspect-ratio: 2/1.2;
-        object-fit: cover;
-        box-shadow: 3px 3px 3px 3px rgb(33, 33, 33);
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
-    }
-</style>
 
 <body>
     <div class="container">
@@ -96,7 +48,7 @@
             @endif
         @endforeach
 
-
+        <button type="button" id="contact" class="btn btn-lg btn-block">Contact</button>
     </div>
     @extends('.component/navbar')
 </body>

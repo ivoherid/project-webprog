@@ -114,7 +114,9 @@ body {
 }
 
 .articles-div {
-    margin: 2.5em 0em;
+    margin-top: 2.5em;
+    margin-bottom: 100px;
+
 }
 
 .card-content {
@@ -248,7 +250,8 @@ body {
     }
 
     .articles-div {
-        margin: 1.5em 0em;
+        margin-top: 2.5em;
+        margin-bottom: 100px;
     }
 
     .article-title {

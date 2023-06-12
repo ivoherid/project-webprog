@@ -70,6 +70,7 @@
             @endforeach
         </div>
 
+        <button type="button" id="contact" class="btn btn-lg btn-block">Contact</button>
 
         @extends('.component/navbar')
 </body>
