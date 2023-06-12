@@ -23,6 +23,8 @@
         width: 100%;
         background: linear-gradient(to top, #896E38 0%, #102526 100%);
         border-radius: 10px;
+        box-shadow: 3px 3px 3px 3px rgb(20, 20, 20);
+        margin-bottom: 3%;
     }
 
     .review {
@@ -31,6 +33,7 @@
         color: #d8d8d6;
         border-radius: 10px;
         padding: 2% 3%;
+        box-shadow: 3px 3px 3px 3px rgb(20, 20, 20);
     }
 
     .text {

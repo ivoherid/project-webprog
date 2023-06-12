@@ -31,7 +31,11 @@
     .container_barber {
         display: flex;
         align-items: flex-start;
-        margin: 8% 4%;
+        margin: 4% 4%;
+        padding: 8px;
+        background-color: #896E38;
+        border-radius: 10px;
+        box-shadow: 3px 3px 3px 3px rgb(22, 22, 22);
     }
 
     .image_barber {
@@ -64,7 +68,7 @@
     <img class="image" src="https://t4.ftcdn.net/jpg/02/59/49/93/360_F_259499366_ytGqXw4RgHBUHBteftXKtpqTs6qiscIh.jpg"
         alt="Image">
     <div style="margin: 0% 2%;">
-        <h5 style="color: #d8d8d6;">barber shop near me</h5>
+        <h5 style="color: #d8d8d6; margin-top:4%">Barbershop near me</h5>
     </div>
 
     <!-- ini buat for each -->
@@ -75,8 +79,25 @@
                 alt="Image">
             <div class="text1" style="color: #d8d8d6;">
                 <h3>{{ $items->name }}</h3>
-                <p>{{ $items->rating }}</p>
-                <a href="{{ route('barbershop', ['id' => $items->id]) }}" style="position: absolute;right:10%; ;" class="btn btn-light" >Order Now</a>
+                <p>rating :
+                    @foreach (range(1, 5) as $items->rating)
+                        @if ($items->rating > 0)
+                            @if ($items->rating > 0.5)
+                                <img src="https://images.emojiterra.com/twitter/512px/2b50.png" style="width: 10px"
+                                    alt="">
+                            @else
+                                <img src="https://www.pngfind.com/pngs/m/536-5360734_half-star-icon-white-hd-png-download.png"
+                                    alt="">
+                            @endif
+                        @endif
+                    @endforeach
+                </p>
+
+            </div>
+            <div>
+                <a href="{{ route('barbershop_review', ['id' => $items->id]) }}"
+                    style="position: absolute;right:6%; margin-top:45px;box-shadow: 2px 2px 2px 2px rgb(46, 46, 46);"
+                    class="btn btn-light">Order Now</a>
             </div>
         </div>
     @endforeach

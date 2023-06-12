@@ -63,6 +63,9 @@
 
                 <button type="submit" class="btn btn-gold btn-lg w-100">Register</button>
             </form>
+            <div class="mt-3">
+                <a href="{{ route('login') }}" class="btn btn-gold btn-lg w-100">Go back to Login</a>
+            </div>
         </div>
     </div>
 </body>

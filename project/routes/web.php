@@ -41,7 +41,8 @@ Route::get('/register', function () {
 });
 
 Route::get('/profile', [ProfileController::class, 'getreview'])->middleware('auth');
-Route::get('/barbershop/{id}', [BarbershopController::class, 'index'])->middleware('auth')->name('barbershop');
+Route::get('/barbershop_review/{id}', [BarbershopController::class, 'index'])->middleware('auth')->name('barbershop_review');
+Route::get('/barbershop_desc/{id}', [BarbershopController::class, 'desc'])->middleware('auth')->name('barbershop_desc');
 Route::get('/barbershopmenu', [MenuController::class, 'index'])->middleware('auth');
 
 

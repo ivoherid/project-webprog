@@ -10,10 +10,10 @@ class Review extends Model
     use HasFactory;
     public function getUser()
     {
-        return $this->belongsTo(User::class,'id');
+        return $this->belongsTo(User::class,'user_id');
     }
 
     public function getShop(){
-        return $this->belongsTo(Barbershop::class,'id');
+        return $this->belongsTo(Barbershop::class,'barbershop_id');
     }
 }

@@ -13,6 +13,12 @@ class BarbershopController extends Controller
         $barber = Barber::with('getShop')->get();
         $barbershop=Barbershop::find($id);
         $review=Review::All();
-        return view('barbershop',['review'=>$review, 'barbershop'=>$barbershop,'barber'=>$barber]);
+        return view('barbershop_review',['review'=>$review, 'barbershop'=>$barbershop,'barber'=>$barber]);
+    }
+
+    public function desc($id){
+        $barber = Barber::with('getShop')->get();
+        $barbershop=Barbershop::find($id);
+        return view('barbershop_desc',[ 'barbershop'=>$barbershop,'barber'=>$barber]);
     }
 }

@@ -12,12 +12,11 @@
 
         .card {
             max-width: 400px;
-            margin: 0 auto;
-            margin-top: 100px;
+            margin: 0;
             border-radius: 10px;
             background-color: #31393B;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
+            padding: 10px;
             color: white
         }
 
@@ -34,14 +33,14 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
-            <div class="card p-4">
-                <h2 class="mb-4">BarberQ</h2>
-                <div class="mb-3">
-                    <a href="{{ url('login') }}" class="btn btn-black btn-lg w-100 mb-3">Login</a>
-                    <a href="{{ url('register') }}" class="btn btn-gold btn-lg w-100">Register</a>
-                </div>
+    <div class="container" style="margin: 0; height: 0;">
+        <img src="{{ asset('img/LogoBBQ.png') }}" alt="" style="margin-top:40%; widht:90%; margin-left:5%;">
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="mb-3" style="width: 70%; margin-top: 85%;">
+                <a href="{{ url('login') }}" class="btn btn-black btn-lg w-100 mb-3"
+                    style="box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(47, 47, 47);">Login</a>
+                <a href="{{ url('register') }}" class="btn btn-gold btn-lg w-100"
+                    style="box-shadow: 2px 2px 2px 2px rgb(47, 47, 47);">Register</a>
             </div>
         </div>
     </div>

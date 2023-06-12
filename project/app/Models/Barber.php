@@ -9,6 +9,6 @@ class Barber extends Model
 {
     use HasFactory;
     public function getShop(){
-        return $this->belongsTo(Barbershop::class,'id');
+        return $this->belongsTo(Barbershop::class,'barbershop_id');
     }
 }

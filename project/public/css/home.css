@@ -13,7 +13,7 @@ body {
 }
 
 .btn-payment {
-    background-color: #896E38;
+    background-color: #896e38;
     color: white;
     padding: 0.5em 3em;
     border-radius: 0.75em;
@@ -71,7 +71,7 @@ body {
     font-size: 1.15em;
 }
 
-.barber-image{
+.barber-image {
     width: 70px;
     height: 70px;
     border-radius: 100%;
@@ -150,8 +150,6 @@ body {
 .card-content {
     padding: 10px !important;
 }
-
-
 
 @media only screen and (device-width: 414px) and (device-height: 896px) and (orientation: portrait) {
     .welcome-text {
