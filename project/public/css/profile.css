@@ -1,5 +1,7 @@
 body {
-
+    font-family: 'Cormorant', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #102526;
     color: #d8d8d6;
 }

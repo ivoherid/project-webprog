@@ -1,9 +1,13 @@
 .navbar {
+    border-top: 2px solid white;
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: rgb(174, 174, 174);
+    background-color: #102526;
     padding: 8px 16px;
+    font-family: 'Cormorant', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
 }
 
 .icon {

@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
-</head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Montserrat:wght@500&family=Poppins:wght@500&display=swap"
+        rel="stylesheet"> </head>
 
 <body>
     {{-- welcome --}}
@@ -83,8 +88,10 @@
                 <div class="card-bodyz card-container">
                     <p class="card-text">{{ $data['timestamp'] }}</p>
                     <h5 class="card-title">{{ $data['title'] }}</h5>
+                    <a href="https://www.liputan6.com/">Baca Selengkapnya</a>
                 </div>
-                <img src="{{ $data['image'] }}" class="card-img-top" alt="...">
+                <img style="object-fit: cover" src="{{ $data['image'] }}" class="card-img-top" alt="...">
+
             </div>
         @endforeach
     </div>

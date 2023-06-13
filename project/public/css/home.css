@@ -2,6 +2,9 @@ body {
     background-color: #102526;
     color: white;
     margin: 1em 2em;
+    font-family: 'Cormorant', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -181,7 +184,9 @@ body {
 
     .balance {
         font-size: 1.2em;
-        margin: 0em 3em;
+        margin-left: 2em;
+        margin-top: 1em;
+        align-items: center;
     }
 
     .barber-title {
