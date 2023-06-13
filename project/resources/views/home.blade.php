@@ -14,7 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Montserrat:wght@500&family=Poppins:wght@500&display=swap"
-        rel="stylesheet"> </head>
+        rel="stylesheet">
+    </head>
 
 <body>
     {{-- welcome --}}
