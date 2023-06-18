@@ -53,10 +53,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
     href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Montserrat:wght@500&family=Poppins:wght@500&display=swap"
-    rel="stylesheet"> <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Test</title>
+    rel="stylesheet">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test</title>
 </head>
 
 <body style="background-color: #102526;">
@@ -84,17 +86,15 @@
             <div class="text1" style="color: #d8d8d6;">
                 <h3>{{ $items->name }}</h3>
                 <p>rating :
-                    @foreach (range(1, 5) as $items->rating)
-                        @if ($items->rating > 0)
-                            @if ($items->rating > 0.5)
-                                <img src="https://images.emojiterra.com/twitter/512px/2b50.png" style="width: 10px"
-                                    alt="">
-                            @else
-                                <img src="https://www.pngfind.com/pngs/m/536-5360734_half-star-icon-white-hd-png-download.png"
-                                    alt="">
-                            @endif
+                    @for ($i = 0; $i < $items->rating; $i++)
+                        @if ($items->rating - $i < 1)
+                            <img src="{{ asset('img/halfstar.png') }}" style="width:
+                        10px"
+                                alt="">
+                        @else
+                            <img src="{{ asset('img/fullstar.png') }}" style="width: 10px" alt="">
                         @endif
-                    @endforeach
+                    @endfor
                 </p>
 
             </div>

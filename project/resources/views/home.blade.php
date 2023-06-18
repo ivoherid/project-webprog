@@ -15,7 +15,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Montserrat:wght@500&family=Poppins:wght@500&display=swap"
         rel="stylesheet">
-    </head>
+</head>
 
 <body>
     {{-- welcome --}}
@@ -25,8 +25,8 @@
     </div>
 
     {{-- add payment --}}
-    <a href="">
-        <button class="btn-payment">Add Payment Button</button>
+    <a href="{{ url('topup') }}">
+        <button class="btn-payment">Topup</button>
     </a>
 
     <div class="wallet-container">

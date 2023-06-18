@@ -48,6 +48,7 @@ body {
 
 .history_pic {
     width: 120px;
+    border-radius: 10px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
 }

@@ -20,4 +20,12 @@ class HomeController extends Controller
             "service"=>Service::all()
         ]);
     }
+
+    public function topup(Request $request){
+        $balance = auth()->user()->balance;
+        $cash = $balance + $request->input('top-up');
+        User::where('id', auth()->user()->id)
+                ->update(['balance'=>$cash]);
+        return redirect()->route('home');
+    }
 }

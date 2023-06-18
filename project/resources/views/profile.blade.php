@@ -16,7 +16,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Montserrat:wght@500&family=Poppins:wght@500&display=swap"
-        rel="stylesheet"> </head>
+        rel="stylesheet">
+</head>
 
 <body class="body">
 
@@ -56,8 +57,6 @@
     <!-- buat for each command  -->
     <div class="review-container">
         @foreach ($review as $item)
-            {{-- <img class="profile_pic" src="https://i1.sndcdn.com/artworks-5aDBMLz7U2zE8hoL-D0dFww-t500x500.jpg"
-            alt=""> --}}
             @if ($item->user_id == auth()->user()->id)
                 <div class="review">
                     <h6>{{ auth()->user()->name }}</h6>

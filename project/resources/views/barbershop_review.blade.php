@@ -10,15 +10,17 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/barbershop.css') }}">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Montserrat:wght@500&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Montserrat:wght@500&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <img class="image" src="https://i.ytimg.com/vi/KiP1k6Vsis0/maxresdefault.jpg" alt="">
-        <h4 style="margin-left: 3%">Barber {{ $barbershop->name }}</h4>
+        <h4 style="margin-left: 3%">{{ $barbershop->name }}</h4>
         <p style="margin-left: 3%">rating :
             @for ($i = 0; $i < $barbershop->rating; $i++)
                 @if ($barbershop->rating - $i < 1)
@@ -29,8 +31,7 @@
                 @endif
             @endfor
         </p>
-        <div class="btn-group" role="group" aria-label="Basic example"
-            style="width: 90%; margin-left: 5%; margin-bottom:10%;">
+        <div class="btn-group" role="group" aria-label="Basic example" style="width: 90%; margin-left: 5%;">
             <a href="{{ route('barbershop_desc', ['id' => $barbershop->id]) }}" type="button" class="btn btn-secondary"
                 style="width: 50%; height: 50px; ">Description</a>
             <a type="button" class="btn btn-secondary"

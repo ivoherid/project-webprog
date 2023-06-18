@@ -27,36 +27,46 @@
 </head>
 
 <body>
-    @if (session('success'))
+    @if (session('insufficient'))
         <div class="alert alert-success mb-3">
-            {{ session('success') }}
+            {{ session('insufficient') }}
         </div>
     @endif
     <div class="barber-profile">
         @foreach ($barber as $data)
-            <div class="card barbercontent">
-                <div class="barber-image">
-                    <figure class="image is-square">
-                        <img class="barber-image" src="{{ asset('img/tony.png') }}" alt="">
-                    </figure>
+            @if ($data->barbershop_id == $barbershop->id)
+                <div class="card barbercontent">
+                    <div class="barber-image" style="margin-top: 10%;">
+                        <figure class="image is-square">
+                            <img class="barber-image" src="{{ asset('img/tony.png') }}" alt="">
+                        </figure>
+                    </div>
+                    <div class="barber-description">
+                        <h6 class="barber-text">{{ $data->name }}</h6>
+                        <p class="barber-text">{{ $data->barbershop }}</p>
+                    </div>
                 </div>
-                <div class="barber-description">
-                    <h6 class="barber-text">{{ $data->name }}</h6>
-                    <p class="barber-text">{{ $data->barbershop }}</p>
-                </div>
-            </div>
+            @endif
         @endforeach
     </div>
 
     <form action="{{ route('order', ['id' => $barbershop->id]) }}" method="POST">
         @csrf
-        <label for="barber" class="form-label">Input Your Barber Name</label>
-        <input type="barber" class="form-control" id="barber" name="barber">
-        <label for="service" class="form-label">Input Your Service</label>
-        <input type="service" class="form-control" id="service" name="service">
-
-        <button type="submit" class="btn btn-gold btn-lg w-100 mb-3">Submit</button>
+        <div style="width: 90%; margin-left: 5%;">
+            <div style="margin: 3% 0;">
+                <label for="barber" class="form-label">Input Your Barber Name</label>
+                <input type="barber" class="form-control" id="barber" name="barber">
+            </div>
+            <div style="margin: 3% 0;">
+                <label for="service" class="form-label">Input Your Service</label>
+                <input type="service" class="form-control" id="service" name="service">
+            </div>
+        </div>
+        <p class="price" style="margin: 1em 1em">Price : Rp. 50,000,00</p>
+        <button style=" background-color:#896E38; color:white; margin-top: 10%; margin-left: 5%; width: 90%;"
+            type="submit" class="btn btn-gold btn-lg mb-3">Order Now</button>
     </form>
+    @extends('.component/navbar')
 </body>
 
 </html>

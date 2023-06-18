@@ -59,7 +59,7 @@ class UserSeeder extends Seeder
             ],[
                 'name' => 'Bayoe',
                 'barbershop'=>'Binoes',
-                'barbershop_id'=>1,
+                'barbershop_id'=>2,
                 'rating' => 4.5
             ],[
                 'name' => 'Wongkene',

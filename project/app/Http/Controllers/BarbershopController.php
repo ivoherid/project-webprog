@@ -8,6 +8,7 @@ use App\Models\Barber;
 use App\Models\Review;
 use App\Models\Transaction;
 use App\Models\Service;
+use App\Models\User;
 
 class BarbershopController extends Controller
 {
@@ -36,10 +37,19 @@ class BarbershopController extends Controller
         $barbershop=Barbershop::find($id);
         $barber = Barber::with('getShop')->get();
         $user = auth()->user();
-        $barbername = $request->input('barber');
+
+        $balance = $user->balance;
+        $cash = $balance - 50000;
+        if($cash < 0){
+            return redirect()->back()->with('insufficient', 'Insufficient Fund');
+        }
+        else{
+            User::where('id', auth()->user()->id)
+                ->update(['balance'=>$cash]);
+                $barbername = $request->input('barber');
         $service = $request->input('service');
         foreach($barber as $item){
-            if($item->name == $barbername){
+            if(strcmp($item->name, $barbername)){
                 $transaction = new Transaction();
                 $transaction->user_id = $user->id;
                 $transaction->barber_id=$item->id;
@@ -47,9 +57,13 @@ class BarbershopController extends Controller
                 $transaction->service=$service;
                 $transaction->price = '50000';
                 $transaction->save();
+                return redirect()->route('review',['id'=>$id]);
             }
         }
-         return redirect()->route('review',['id'=>$id]);
+
+        }
+
+
     }
 
     public function bypass($id){

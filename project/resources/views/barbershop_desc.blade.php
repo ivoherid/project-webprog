@@ -31,8 +31,7 @@
                 @endif
             @endfor
         </p>
-        <div class="btn-group" role="group" aria-label="Basic example"
-            style="width: 90%; margin-left: 5%;margin-bottom:10%;">
+        <div class="btn-group" role="group" aria-label="Basic example" style="width: 90%; margin-left: 5%;">
             <a href="" type="button" class="btn btn-secondary"
                 style="width: 50%; height: 50px;  background-color : #896E38;">Description</a>
             <a href="{{ route('barbershop_review', ['id' => $barbershop->id]) }}" class="btn btn-secondary"
@@ -65,7 +64,7 @@
                         <div class="barber-description">
                             <img class="barber-image" src="{{ asset('img/tony.png') }}" alt="">
                             <h6 class="barber-text">{{ $items->name }}</h6>
-                            <p class="barber-text">Barber {{ $items->barbershop }}</p>
+                            <p class="barber-text">{{ $items->barbershop }}</p>
                             <div class="barber-rating">
                                 <img class="ic_star" src="{{ asset('img/fullstar.png') }}" alt="">
                                 <p class="barber-text">{{ $items->rating }}</p>

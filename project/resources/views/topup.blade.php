@@ -41,15 +41,15 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="page-title">Leave Your Opinion</h1>
 
-        <form class="opinion-form" action="{{ route('review', ['id' => $barbershop->id]) }}" method="POST">
+    <div class="container">
+        <h1 class="page-title">Top up Amount</h1>
+
+        <form class="opinion-form" action="" method="POST">
             <div class="form-group">
-                <label class="msg" for="message">Message:</label>
+                <label class="msg" for="message">Amount</label>
                 @csrf
-                <textarea type="review" class="form-control" id="review" name="review" placeholder="What's your opinion?"
-                    rows="3"></textarea>
+                <input type="top-up" class="form-control" id="top-up" name="top-up">
             </div>
 
             <button type="submit" class="btn btn-lg w-100 btn-submit">Submit</button>
