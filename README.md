@@ -12,7 +12,7 @@ Laman BarberQ menyimpan data user di database pada saat user register, sementara
 
 Sign in
 <br/> 
-![image](https://github.com/ivoherid/project-webprog/assets/127408388/a11be552-a01d-4a8e-aabf-6fc57e46a626) <br/> 
+![image](https://github.com/ivoherid/project-webprog/assets/127408388/a11be552-a01d-4a8e-aabf-6fc57e46a626)
 
 
 ![image](https://github.com/ivoherid/project-webprog/assets/127408388/46e9a3c2-5381-4c7a-9c57-24b612bad958) <br/> 
