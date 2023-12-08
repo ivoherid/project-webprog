@@ -13,21 +13,35 @@ Laman BarberQ menyimpan data user di database pada saat user register, sementara
 Sign in
 ![image](https://github.com/ivoherid/project-webprog/assets/127408388/a11be552-a01d-4a8e-aabf-6fc57e46a626)
 
+
 ![image](https://github.com/ivoherid/project-webprog/assets/127408388/46e9a3c2-5381-4c7a-9c57-24b612bad958)
 
+
+
 Home
+
 ![image](https://github.com/ivoherid/project-webprog/assets/127408388/5c952021-5725-465a-97e0-45dc84264d57)
 
+
 Barber
+
 ![image](https://github.com/ivoherid/project-webprog/assets/127408388/c9f7c09f-1a4e-4c07-94d6-e0cd174c285d)
+
 
 ![image](https://github.com/ivoherid/project-webprog/assets/127408388/f0d02952-0903-41e4-b6ee-8730c64fd406)
 
+
+
 ![image](https://github.com/ivoherid/project-webprog/assets/127408388/07788477-de54-4970-9ce9-e693777868ce)
+
+
 
 ![image](https://github.com/ivoherid/project-webprog/assets/127408388/2849967f-1c15-4b89-9620-94a1262ae253)
 
+
 Profile
+
+
 ![image](https://github.com/ivoherid/project-webprog/assets/127408388/78083db9-f5bc-468a-962b-d3112dbe8aa3)
 
 
